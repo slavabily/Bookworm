@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		B95E251C244260AE00CEC4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95E251B244260AE00CEC4ED /* Assets.xcassets */; };
 		B95E251F244260AE00CEC4ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95E251E244260AE00CEC4ED /* Preview Assets.xcassets */; };
 		B95E2522244260AF00CEC4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95E2520244260AF00CEC4ED /* LaunchScreen.storyboard */; };
+		B95E252B2442EEFF00CEC4ED /* CoreDataKit in Frameworks */ = {isa = PBXBuildFile; productRef = B95E252A2442EEFF00CEC4ED /* CoreDataKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95E252B2442EEFF00CEC4ED /* CoreDataKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = Bookworm;
+			packageProductDependencies = (
+				B95E252A2442EEFF00CEC4ED /* CoreDataKit */,
+			);
 			productName = Bookworm;
 			productReference = B95E250F244260A600CEC4ED /* Bookworm.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = B95E2506244260A600CEC4ED;
+			packageReferences = (
+				B95E25292442EEFF00CEC4ED /* XCRemoteSwiftPackageReference "CoreDataKit" */,
+			);
 			productRefGroup = B95E2510244260A600CEC4ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B95E25292442EEFF00CEC4ED /* XCRemoteSwiftPackageReference "CoreDataKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ragzy15/CoreDataKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B95E252A2442EEFF00CEC4ED /* CoreDataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B95E25292442EEFF00CEC4ED /* XCRemoteSwiftPackageReference "CoreDataKit" */;
+			productName = CoreDataKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B95E2516244260A600CEC4ED /* Bookworm.xcdatamodeld */ = {
